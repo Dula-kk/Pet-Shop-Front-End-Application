@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+    <div class="header-1">
+    <a href="#" class="logo"><i class="fa fa-paw"></i>Petology</a>
+    <form action="" class="search-box-container">
+         <input type="search" id="search-box" placeholder="search here..." >
+         <label for="search-box" class="fas fa-search"></label>
+    </form>
+    </div>
+    <div class="header-2">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            
+            <a href="home.html">Home</a>
+            <a href="pets.html">Pets</a>
+            <a href="pet-details.html">Info</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    <div class="icons">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
+        <a href="signin.html"><i class="fas fa-user-circle"></i> </a>
+        <button id="dark-mode-toggle">🌙 </button>
+    </div>
+</header>
+<section class="pet-details" id="pet-details">
+    <div class="container">
+        <img src="img/bengal-cat-top-10-cat-breeds.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Jizu</h1>
+            <p class="species">Species: <span>Cat</span></p>
+            <p class="breed">Breed: <span>Bengal-Cat</span></p>
+            <p class="age">Age: <span>6 Months</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Active, playful, and intelligent.</span></p>
+            <p class="care">Care Requirements: <span>Needs lots of playtime, mental stimulation, and regular grooming.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/black-standard-rat_Luvtinytoes_Shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Binky</h1>
+            <p class="species">Species: <span>Rat</span></p>
+            <p class="breed">Breed: <span>Black-Standard-Rat</span></p>
+            <p class="age">Age: <span>1 Year</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Friendly, intelligent, and social.</span></p>
+            <p class="care">Care Requirements: <span>Needs a spacious cage, social interaction, and a varied diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/dumbo-rat.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Finni</h1>
+            <p class="species">Species: <span>Rat</span></p>
+            <p class="breed">Breed: <span>Dumbo-Rat</span></p>
+            <p class="age">Age: <span>4 Months</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Friendly, intelligent, and social.</span></p>
+            <p class="care">Care Requirements: <span>Needs a spacious cage, social interaction, and a varied diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/Dove-2.jpeg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Ossi</h1>
+            <p class="species">Species: <span>Bird</span></p>
+            <p class="breed">Breed: <span>Dove</span></p>
+            <p class="age">Age: <span>1 Month</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span> Gentle, calm, and affectionate.</span></p>
+            <p class="care">Care Requirements: <span>Needs a spacious cage, fresh water, a diet of seeds, grains, and occasional fruits and vegetables, and regular cage cleaning.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/british-shorthair-top-10-cat-breed.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Quinshkey</h1>
+            <p class="species">Species: <span>Cat</span></p>
+            <p class="breed">Breed: <span>British-Shorthair</span></p>
+            <p class="age">Age: <span>3 Monts</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Calm, easygoing, and affectionate.</span></p>
+            <p class="care">Care Requirements: <span>Low grooming needs but enjoys regular playtime and a balanced diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/poodle-lying-on-grass.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Wendy</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Poodle</span></p>
+            <p class="age">Age: <span>3 Years</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Intelligent, active, trainable, and alert.</span></p>
+            <p class="care">Care Requirements: <span>Requires regular grooming, daily exercise, mental stimulation, and a balanced diet. </span></p>
+            <p class="status">Status: <span>Available for Adoption (3)</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/shih-tzu-dog-eating-outdoors_thanakarn-Singto_Shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Zahoo</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Shih-tzu</span></p>
+            <p class="age">Age: <span>1 Years</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Affectionate, outgoing, friendly, and playful. </span></p>
+            <p class="care">Care Requirements: <span> Needs regular grooming, daily exercise, and a healthy diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption (2)</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/Alaskan-husky-dog_Valmedia_shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Marvel</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Alaskan-Husky</span></p>
+            <p class="age">Age: <span>2 Years</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Energetic, intelligent, and friendly.</span></p>
+            <p class="care">Care Requirements: <span>Requires lots of exercise, mental stimulation, and a secure yard; sheds heavily.</span></p>
+            <p class="status">Status: <span>Already Adopted</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/Basset-Hound_Billion-Photos_shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Baus</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Basset-Hound</span></p>
+            <p class="age">Age: <span>9 Months</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Gentle, friendly, and laid-back.</span></p>
+            <p class="care">Care Requirements: <span>Needs regular walks, ear cleaning, and a diet to prevent obesity.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/Basset-Retriever-resting-on-park-grass_Jon-Osumi_Shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">yanxi</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Basset-Retriever</span></p>
+            <p class="age">Age: <span>2.5 Years</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Friendly, affectionate, and intelligent.</span></p>
+            <p class="care">Care Requirements: <span>Regular exercise, Grooming and balanced diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/beabull-puppy_JStaley401_SShutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Levi</h1>
+            <p class="species">Species: <span>Dog</span></p>
+            <p class="breed">Breed: <span>Beabull</span></p>
+            <p class="age">Age: <span>7 Months</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Loyal, friendly, and playful.</span></p>
+            <p class="care">Care Requirements: <span>Needs moderate exercise, regular grooming, and a healthy diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption (2)</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/red-satin-rat_Sergey-Bezgodov_Shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Misty</h1>
+            <p class="species">Species: <span>Rat</span></p>
+            <p class="breed">Breed: <span>Red-Satin</span></p>
+            <p class="age">Age: <span>1 Month</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Social, curious, and friendly.</span></p>
+            <p class="care">Care Requirements: <span>Needs a tank with water and a basking area, UVB lighting, and a diet of pellets, vegetables, and occasional protein.</span></p>
+            <p class="status">Status: <span>Available for Adoption (5)</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/Canary.jpeg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Kisskey</h1>
+            <p class="species">Species: <span>Bird</span></p>
+            <p class="breed">Breed: <span>Canary</span></p>
+            <p class="age">Age: <span>10 Months</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Cheerful, singing, and active.</span></p>
+            <p class="care">Care Requirements: <span>Needs a clean cage, fresh water, seeds, fruits, and vegetables.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/male-burmese-cat-wearing-santa-hat_vprotastchik_Shutterstock.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">XiaXia</h1>
+            <p class="species">Species: <span>Rat</span></p>
+            <p class="breed">Breed: <span>Male-Burmese</span></p>
+            <p class="age">Age: <span>2 Years</span></p>
+            <p class="gender">Gender: <span>Female</span></p>
+            <p class="description">Temperament: <span>Social, intelligent, and affectionate.</span></p>
+            <p class="care">Care Requirements: <span>Requires a spacious cage, social interaction, a varied diet including rat pellets, fresh fruits, and vegetables, 
+                and regular cleaning of their living environment.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/PionusParrot.jpeg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Nuri</h1>
+            <p class="species">Species: <span>Bird</span></p>
+            <p class="breed">Breed: <span>Pionus Parrot</span></p>
+            <p class="age">Age: <span>11 Months</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Social, intelligent, and affectionate.</span></p>
+            <p class="care">Care Requirements: <span>Requires a spacious cage, social interaction, fresh water, and a varied diet.</span></p>
+            <p class="status">Status: <span>Available for Adoption (3)</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/top-10-best-reptile-pets-to-keep-Red-Eared-Slider.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Zulu</h1>
+            <p class="species">Species: <span>Reptile</span></p>
+            <p class="breed">Breed: <span>Red-Eared-Slider</span></p>
+            <p class="age">Age: <span>1 Year</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Active, curious, and semi-aquatic.</span></p>
+            <p class="care">Care Requirements: <span>Needs a tank with water and a basking area, UVB lighting, and a diet of pellets, vegetables, and occasional protein.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/top-10-best-reptile-pets-to-keep-Bearded-Dragon.jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Gucchi</h1>
+            <p class="species">Species: <span>Reptile</span></p>
+            <p class="breed">Breed: <span>Beared-Dragon</span></p>
+            <p class="age">Age: <span>1 Year</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span>Docile, friendly, and active.</span></p>
+            <p class="care">Care Requirements: <span> Requires a large tank, UVB lighting, a basking area, and a diet of insects and vegetables.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="img/top-10-best-reptile-pets-to-keep-Crested-Gecko (2).jpg" alt="Pet Image" class="pet-image">
+        <div class="details">
+            <h1 class="name">Inshu</h1>
+            <p class="species">Species: <span>Reptile</span></p>
+            <p class="breed">Breed: <span>Crested-Gecko</span></p>
+            <p class="age">Age: <span>6 Months</span></p>
+            <p class="gender">Gender: <span>Male</span></p>
+            <p class="description">Temperament: <span> Docile, nocturnal, and easy to handle.</span></p>
+            <p class="care">Care Requirements: <span>Needs a vertical tank with branches, appropriate humidity, and a diet of commercial gecko food, fruits and insects.</span></p>
+            <p class="status">Status: <span>Available for Adoption</span></p>
+            <p class="contact">Contact: <span>info@petstore.com</span></p>
+            <button class="inquire-btn" onclick="sendInquiry()">Inquire About Pet</button>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="home.html">Home</a>
+            <a href="pets.html">Pets</a>
+            <a href="pet-details.html">Info</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +94 11 233 4567</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Main Street, Colombo, Sri Lanka</p>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+    <h1 class="credit">Created by <span>Dulmini Kumari From SE03</span> @All Rights Reserved!</h1>
+</section>
+    <script src="scripts.js"></script>
+</body>
+</html>

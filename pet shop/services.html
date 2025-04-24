@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+    <div class="header-1">
+    <a href="#" class="logo"><i class="fa fa-paw"></i>Petology</a>
+    <form action="" class="search-box-container">
+         <input type="search" id="search-box" placeholder="search here..." >
+         <label for="search-box" class="fas fa-search"></label>
+    </form>
+    </div>
+    <div class="header-2">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            
+            <a href="home.html">Home</a>
+            <a href="pets.html">Pets</a>
+            <a href="pet-details.html">Info</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    <div class="icons">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
+        <a href="signin.html"><i class="fas fa-user-circle"></i> </a>
+        <button id="dark-mode-toggle">🌙 </button>
+    </div>
+</header>
+<section class="services">
+    <h2 class="topic2">Services We Offer</h2>
+    <div class="service-item">
+        <h3>Grooming - $50</h3>
+        <p>Professional grooming services ensure your pets are clean, healthy, and well-maintained. 
+            Grooming includes bathing, hair trimming, nail clipping, ear cleaning, and dental care.
+        </p>
+        <button class="apply" onclick="getService('Grooming')">Apply</button>
+    </div>
+    <div class="service-item">
+        <h3>Vaccinations - $30</h3>
+        <p>Regular vaccinations protect your pets from various infectious diseases. 
+            Our vaccination service ensures your pets are up-to-date with their shots, keeping them healthy and safe.
+        </p>
+        <button class="apply" onclick="getService('Vaccination')">Apply</button>
+    </div>
+    <div class="service-item">
+        <h3>Training - $100</h3>
+        <p>Training services help pets develop good behavior and obedience skills. 
+            Our training programs are designed to address specific needs, from basic commands to advanced tricks and behavioral corrections.
+        </p>
+        <button class="apply" onclick="getService('Training')">Apply</button>
+    </div>
+    <div class="service-item">
+        <h3>Boarding - $25/Night</h3>
+        <p>Our boarding service provides a safe and comfortable environment for your pets when you're away. 
+            We offer individual attention, regular feeding, exercise, and medical care to ensure your pets are well-cared for during their stay.</p>
+        <button class="apply" onclick="getService('Boarding')">Apply</button>
+    </div>
+</section>
+
+<section class="products">
+    <div class="product-item">
+        <img src="img/krispys-cheese-cover_266_300.jpg" alt="Food 1">
+        <p>Krispys cheese</p>
+        <p>Complementary feed for dogs</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart" onclick="addCart('Krispys cheese')" >Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Krispys cheese')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/grandmix-cardellini-300g_266_300.jpg" alt="Food 1">
+        <p>GrandMix cardellini</p>
+        <p>Complete feed for canaries</p>
+        <p>Price: $30</p>
+        <button class="add-to-cart" onclick="addCart('GrandMix cardellini')" >Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('GrandMix cardellini')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/stix-cocorite-sweet_266_300.jpg" alt="Food 1">
+        <p>Stix sweet cocorite ed esotici</p>
+        <p>Complementary feed for budgies and small exotic birds</p>
+        <p>Price: $23</p>
+        <button class="add-to-cart" onclick="addCart('Stix sweet cocorite ed esotici')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Stix sweet cocorite ed esotici')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/shrimps-160g_266_300.jpg" alt="Food 1">
+        <p>Shrimps</p>
+        <p>Food for large freshwater turtles</p>
+        <p>Price: $18</p>
+        <button class="add-to-cart" onclick="addCart('Shrimps')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Shrimps')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/mint-cover_266_300.jpg" alt="Food 1">
+        <p>Mint Chews</p>>
+        <p>Complementary feed for dos</p>
+        <p>Price: $22</p>
+        <button class="add-to-cart" onclick="addCart('Mint Chews')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Mint Chews')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/gammarus-130g_266_300.jpg" alt="Food 1">
+        <p>Gammarus</p>
+        <p>Food for freshwater turtles</p>
+        <p>Price: $32</p>
+        <button class="add-to-cart" onclick="addCart('Gammarus')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Gammarus')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/sausages-chicken_266_300.jpg" alt="Food 1">
+        <p>Sausages chicken</p>
+        <p>Complementary feed for dogs</p>
+        <p>Price: $13</p>
+        <button class="add-to-cart"  onclick="addCart('Sausages chicken')" >Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Sausages chicken')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/melange-vegetable-new_266_300.jpg" alt="Food 1">
+        <p>Mélange vegetable</p>
+        <p>Complementary feed for granivorous birds</p>
+        <p>Price: $10</p>
+        <button class="add-to-cart" onclick="addCart('Mélange vegetable')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Mélange vegetable')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/wellness-food-for-hamsters-1kg_266_300.jpg" alt="Food 1">
+        <p>Wellness hamsters</p>
+        <p>Complete feed for hamsters</p>
+        <p>Price: $29</p>
+        <button class="add-to-cart" data-item-id="9">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Wellness hamsters')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/sunmix-esotici_266_300.jpg" alt="Food 1">
+        <p>Sunmix esotici</p>
+        <p> Complete feed for tropical finches (Estrildid finches)</p>
+        <p>Price: $30</p>
+        <button class="add-to-cart" onclick="addCart('Sunmix esotici')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Sunmix esotici')">Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/rodypops_266_300.jpg" alt="Food 1">
+        <p>Rodypops</p>
+        <p>Food for dwarf rabbits, guinea pigs, hamsters and other small rodents</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart" onclick="addCart('Rodypops')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Rodypops')" >Buy Now</button>
+    </div>
+    <div class="product-item">
+        <img src="img/yum-yum_266_300.jpg" alt="Food 1">
+        <p>Yum-Yum ham bone</p>
+        <p>Food for dogs</p>
+        <p>Price: $15</p>
+        <button class="add-to-cart" onclick="buyProduct('Yum-Yum ham bone')">Add To Cart</button>
+        <button class="buy-now" onclick="buyProduct('Yum-Yum ham bone')">Buy Now</button>
+    </div>
+</section>
+<section class="accessories">
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="img/charmy-9_266_300.jpg" alt="Accessory 1">
+            <p>Charmy 9</p>
+            <p><span>Cleaning lotion for cats and dogs - no water needed</span></p>
+            <p>Price: $23</p>
+            <button class="add-to-cart" onclick="addCart('Charmy 9')">Add to Cart</button>
+            <button class="buy-now" onclick="buyProduct('Charmy 9')">Buy Now</button>
+        </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img/pet-wipes-muschio-bianco_266_300.jpg" alt="Accessory 1">
+                <p>Pet Wipes White Musk</p>
+                <p><span>Wet wipes, white musk scented, for dogs, cats, puppies and kittens</span></p>
+                <p>Price: $21</p>
+                <button class="add-to-cart" onclick="addCart('Pet Wipes White Musk')">Add to Cart</button>
+                <button class="buy-now" onclick="buyProduct('Pet Wipes White Musk')">Buy Now</button>
+            </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/pettine-denti-radi_266_300.jpg" alt="Accessory 1">
+                    <p>Pet Wipes White Musk</p>
+                    <p><span>Wet wipes, white musk scented, for dogs, cats, puppies and kittens</span></p>
+                    <p>Price: $32</p>
+                    <button class="add-to-cart" onclick="addCart('Pet Wipes White Musk')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyProduct('Pet Wipes White Musk')">Buy Now</button>
+                </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="img/silicat-lavanda-new_266_300.jpg" alt="Accessory 1">
+                        <p>Silicat Lavender</p>
+                        <p><span>Hygienic cat litter made with lavender-scented silica gel</span></p>
+                        <p>Price: $12</p>
+                        <button class="add-to-cart" onclick="addCart('Silicat Lavender')">Add to Cart</button>
+                        <button class="buy-now" onclick="buyProduct('Silicat Lavender')">Buy Now</button>
+                    </div>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="img/spazzola-cardatore-doppia_266_300.jpg" alt="Accessory 1">
+                            <p>Combo slicker brush</p>
+                            <p><span>Hair Tool</span></p>
+                            <p>Price: $8</p>
+                            <button class="add-to-cart" onclick="addCart('Combo slicker brush')">Add to Cart</button>
+                            <button class="buy-now" onclick="buyProduct('Combo slicker brush')">Buy Now</button>
+                        </div>
+                        </div>
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <img src="img/spazzola-ovale-doppia_266_300.jpg" alt="Accessory 1">
+                                <p>Combo oval brush</p>
+                                <p><span>To Comb Hair</span></p>
+                                <p>Price: $15</p>
+                                <button class="add-to-cart" onclick="addCart('Combo oval brush')">Add to Cart</button>
+                                <button class="buy-now" onclick="buyProduct('Combo oval brush')">Buy Now</button>
+                            </div>
+                            </div>
+                            <div class="product-grid">
+                                <div class="product-item">
+                                    <img src="img/topolini-a-molla-cover_266_300.jpg" alt="Accessory 1">
+                                    <p>Food Holder</p>
+                                    <p><span>Universal food holder-Rats/Birds</span></p>
+                                    <p>Price: $32</p>
+                                    <button class="add-to-cart" onclick="addCart('Clips')">Add to Cart</button>
+                                    <button class="buy-now" onclick="buyProduct('Clips')">Buy Now</button>
+                                </div>
+                                </div>
+                                <div class="product-grid">
+                                    <div class="product-item">
+                                        <img src="img/ciotola-antiscivolo-cover_266_300.jpg" alt="Accessory 1">
+                                        <p>Anti-skid steel bowls</p>
+                                        <p><span>For Feed</span></p>
+                                        <p>Price: $24</p>
+                                        <button class="add-to-cart" onclick="addCart('Anti-skid steel bowls')">Add to Cart</button>
+                                        <button class="buy-now" onclick="buyProduct('Anti-skid steel bowls')">Buy Now</button>
+                                    </div>
+                                    </div>
+                                    <div class="product-grid">
+                                    <div class="product-item">
+                                        <img src="img/nido-vimini_266_300.jpg" alt="Accessory 1">
+                                        <p>Wicker Nest</p>
+                                        <p><span>Wicker Nest for Birds</span></p>
+                                        <p>Price: $31</p>
+                                        <button class="add-to-cart" onclick="addCart('Wicker Nest')">Add to Cart</button>
+                                        <button class="buy-now" onclick="buyProduct('Wicker Nest')">Buy Now</button>
+                                    </div>
+                                    </div>
+                                    <div class="product-grid">
+                                    <div class="product-item">
+                                        <img src="img/nido-pera_266_300.jpg" alt="Accessory 1">
+                                        <p>Wicker Nest</p>
+                                        <p><span>Wicker nest, pear-shaped, for small exotic birds</span></p>
+                                        <p>Price: $25</p>
+                                        <button class="add-to-cart" onclick="addCart('Wicker Nest')">Add to Cart</button>
+                                        <button class="buy-now" onclick="buyProduct('Wicker Nest')">Buy Now</button>
+                                    </div>
+                                    </div>
+                                    <div class="product-grid">
+                                        <div class="product-item">
+                                            <img src="img/nido-panno_266_300.jpg" alt="Accessory 1">
+                                            <p>Polyester nest</p>
+                                            <p><span>Nest for Birds</span></p>
+                                            <p>Price: $28</p>
+                                            <button class="add-to-cart" onclick="addCart('Polyester nest')">Add to Cart</button>
+                                            <button class="buy-now" onclick="buyProduct('Polyester nest')">Buy Now</button>
+                                        </div>
+                                        </div>
+                                        <div class="product-grid">
+                                            <div class="product-item">
+                                                <img src="img/nido_scatola_266_300.jpg" alt="Accessory 1">
+                                                        <p>Wooden nests</p>
+                                                        <p><span> Woden Nest for Birds</span></p>
+                                                        <p>Price: $24</p>
+                                                <button class="add-to-cart" onclick="addCart('Wooden nests')">Add to Cart</button>
+                                                <button class="buy-now" onclick="buyProduct('Wooden nests')">Buy Now</button>
+                                            </div>
+                                            </div>
+                                            <div class="product-grid">
+                                                <div class="product-item">
+                                                    <img src="img/espositore-palla-punte-fini-piccola_266_300.jpg" alt="Accessory 1">
+                                                        <p>Sharp point ball</p>
+                                                        <p><span>Playing items-Dogs</span></p>
+                                                        <p>Price: $15</p>
+                                                    <button class="add-to-cart" onclick="addCart('Sharp point ball')">Add to Cart</button>
+                                                    <button class="buy-now" onclick="buyProduct('Sharp point ball')">Buy Now</button>
+                                                </div>
+                                                </div>
+                                                <div class="product-grid">
+                                                    <div class="product-item">
+                                                        <img src="img/altri-vari-clip_266_300.jpg" alt="Accessory 1">
+                                                        <p>Clips</p>
+                                                        <p><span>Universal food holder-Rats/Birds</span></p>
+                                                        <p>Price: $20</p>
+                                                        <button class="add-to-cart" onclick="addCart('Clips')">Add to Cart</button>
+                                                        <button class="buy-now" onclick="buyProduct('Clips')">Buy Now</button>
+                                                    </div>
+                                                    </div>
+                                                    <div class="product-grid">
+                                                        <div class="product-item">
+                                                            <img src="img/wood-gnaws-criceti-cover_266_300.jpg" alt="Accessory 1">
+                                                            <p>Wood Gnaws criceti</p>
+                                                            <p><span>Dental hygiene wooden items-Rats</span></p>
+                                                            <p>Price: $45</p>
+                                                            <button class="add-to-cart"  onclick="addCart('Wood Gnaws criceti')">Add to Cart</button>
+                                                            <button class="buy-now" onclick="buyProduct('Wood Gnaws criceti')">Buy Now</button>
+                                                        </div>
+                                                        </div>
+        <!-- More products -->
+    </div>
+</section>
+<section class="appointment-section">
+    <h2>Schedule a Service Appointment</h2>
+    <form id="appointmentForm">
+        <label for="service" class="serve">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="">--Select a Service--</option>
+            <option value="grooming">Grooming</option>
+            <option value="vaccination">Vaccination</option>
+            <option value="training">Training</option>
+            <option value="boarding">Boarding</option>
+        </select><br><br>
+
+        <label for="date" class="date">Select Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time" class="time">Select Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <button onclick="bookAppointment('Service Name')">Book Appointment</button>
+    </form>
+    <div id="appointment-message">Thank You</div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+                <a href="home.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="pet-details.html">Info</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +94 11 233 4567</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Main Street, Colombo, Sri Lanka</p>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+    <h1 class="credit">Created by <span>Dulmini Kumari From SE03</span> @All Rights Reserved!</h1>
+</section>
+<script src="scripts.js"></script>
+</body>
+</html>

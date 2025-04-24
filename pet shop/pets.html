@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+    <div class="header-1">
+    <a href="#" class="logo"><i class="fa fa-paw"></i>Petology</a>
+    <form action="" class="search-box-container">
+         <input type="search" id="search-box" placeholder="search here..." >
+         <label for="search-box" class="fas fa-search"></label>
+    </form>
+    </div>
+    <div class="header-2">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            
+            <a href="home.html">Home</a>
+            <a href="pets.html">Pets</a>
+            <a href="pet-details.html">Info</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    <div class="icons">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
+        <a href="signin.html"><i class="fas fa-user-circle"></i> </a>
+        <button id="dark-mode-toggle">🌙 </button>
+    </div>
+</header>
+<main>
+    <section class="pet-filters">
+        <h2 class="topic">Filter Pets</h2>
+        <form id="pet-filter-form">
+            <label for="species" class="spec">Species:</label>
+            <select id="species" name="species">
+                <option value="all">All</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="rat">Rat</option>
+                <option value="reptile">Reptile</option>
+            </select>
+            <label for="age" class="ages">Age:</label>
+            <select id="age" name="age">
+                <option value="all">All</option>
+                <option value="puppy">Puppy</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select>
+            <button type="submit">Apply Filters</button>
+        </form>
+    </section>
+
+    <section class="pets-list">
+        <h2>Available Pets</h2>
+        <div class="pet-grid">
+            <!-- List of pets here -->
+            <div class="pet-item">
+                <img src="img/labrador-retriever_BoraAlma_Pixabay.jpg" alt="Pet 1">
+                <p>Name: <span>Massi</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Adult</span></p>
+                <p>Price: <span>30$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Massi')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Massi')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Pomeranian-dog.webp" alt="Pet 1">
+                <p>Name: <span>Niki</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Senior</span></p>
+                <p>Price: <span>26$</span></p>
+                <button  class="fav-btn" onclick="markAsFavourite('Niki')">Mark as Favorite</button>
+                <button class="buy-now"onclick="buyNow('Niki')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/french-bulldog_Mylene2401_Pixabay.jpg" alt="Pet 1">
+                <p>Name: <span>Sandy</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Puppy</span></p>
+                <p>Price: <span>19$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Sandy')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Sandy')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/silver-rat-sits-next-to-a-white-saucer-and-waits-for-food_-Alexander-Baluev_Shutterstock.jpg" alt="Pet 1">
+                <p>Name: <span>Misty</span></p>
+                <p>Species: <span>Rat</span></p>
+                <p>Age: <span>puppy</span></p>
+                <p>Price: <span>20$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Misty')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Misty')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/top-10-best-reptile-pets-to-keep-Bearded-Dragon.jpg" alt="Pet 1">
+                <p>Name: <span>Gucchi</span></p>
+                <p>Species: <span>Reptile</span></p>
+                <p>Age: <span>Adult</span></p>
+                <p>Price: <span>16$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Gucchi')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Gucchi')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/german-shepherd-head-tilt_Shutterstock_Diego-Cervo.jpg" alt="Pet 1">
+                <p>Name: <span>Kiniko</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Senior</span></p>
+                <p>Price: <span>33$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Kiniko')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('kiniko')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/top-10-best-reptile-pets-to-keep-Red-Eared-Slider.jpg" alt="Pet 1">
+                <p>Name: <span>Zulu</span></p>
+                <p>Species: <span>Reptile</span></p>
+                <p>Age: <span>Adult</span></p>
+                <p>Price: <span>23$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Zulu')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Zulu')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/a-cinammon-pearl-rat_JLRphotography_Shutterstock.jpg" alt="Pet 1">
+                <p>Name: <span>Mausy</span></p>
+                <p>Species: <span>Rat</span></p>
+                <p>Age: <span>Senior</span></p>
+                <p>Price: <span>25$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Mausy')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Mausy')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Basset-Hound_Billion-Photos_shutterstock.jpg" alt="Pet 1">
+                <p>Name: <span>Baus</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Puppy</span></p>
+                <p>Price: <span>18$</span></p>
+                <button  class="fav-btn" onclick="markAsFavourite('Baus')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Baus')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Akita-dog_Anaite_Shutterstock.jpg" alt="Pet 1">
+                <p>Name: <span>Akiya</span></p>
+                <p>Species: <span>Dog</span></p>
+                <p>Age: <span>Senior</span></p>
+                <p>Price: <span>35$</span></p>
+                <button  class="fav-btn" onclick="markAsFavourite('Akiya')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Akiya')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/PionusParrot.jpeg" alt="Pet 1">
+                <p>Name: <span>Bixbi</span></p>
+                <p>Species: <span>Bird</span></p>
+                <p>Age: <span>Adult</span></p>
+                <p>Price: <span>32$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Bixbi')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Bixbi')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Canary.jpeg" alt="Pet 1">
+                <p>Name: <span>Kisskey</span></p>
+                <p>Species: <span>Bird</span></p>
+                <p>Age: <span>Puppy</span></p>
+                <p>Price: <span>15$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Kisskey')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Kisskey')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Persian-cat-top-10-cat-breeds.jpg" alt="Pet 1">
+                <p>Name: <span>Meow</span></p>
+                <p>Species: <span>Cat</span></p>
+                <p>Age: <span>Puppy</span></p>
+                <p>Price: <span>35$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Meow')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Meow')">Buy Now</button>
+            </div>
+            <div class="pet-item">
+                <img src="img/Scottish-Fold-top-10-cat-breed.jpg" alt="Pet 1">
+                <p>Name: <span>Surul</span></p>
+                <p>Species: <span>Cat</span></p>
+                <p>Age: <span>Senior</span></p>
+                <p>Price: <span>25$</span></p>
+                <button class="fav-btn" onclick="markAsFavourite('Surul')">Mark as Favorite</button>
+                <button class="buy-now" onclick="buyNow('Surul')">Buy Now</button>
+            </div>
+        </div>
+        <div class="pagination" id="pagination-controls">
+            <button id="prev-page"onclick="prevPage()">Previous</button>
+            <button id="next-page"onclick="nextPage()">Next</button>
+        </div>
+    </section>
+
+</main>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+                <a href="home.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="pet-details.html">Info</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> +94 11 233 4567</p>
+            <p><i class="fas fa-envelope"></i> info@petstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Main Street, Colombo, Sri Lanka</p>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+    <h1 class="credit">Created by <span>Dulmini Kumari From SE03</span> @All Rights Reserved!</h1>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
